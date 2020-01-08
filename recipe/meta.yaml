@@ -1,4 +1,4 @@
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/poibin_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/poibin/poibin_{{ version }}.tar.gz
-  sha256: a24249b890938d85315a9e2e3c0b36a8d310629d6350edab2acb2a7f667d94e6
+  sha256: 3b395e001db8f4b0a56f3645c5eef645978418baa6f8f6a7d58d9acff9f6b9eb
 
 build:
   merge_build_host: True  # [win]
