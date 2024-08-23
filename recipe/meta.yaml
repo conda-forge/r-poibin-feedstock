@@ -1,4 +1,4 @@
-{% set version = "1.5" %}
+{% set version = "1.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/poibin_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/poibin/poibin_{{ version }}.tar.gz
-  sha256: 3b395e001db8f4b0a56f3645c5eef645978418baa6f8f6a7d58d9acff9f6b9eb
+  sha256: 0ad079ed0b9eae86369bc24c580b6cc5172fac48ad4efbe829b6db71f7edbcf8
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,9 +41,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=poibin
   license: GPL-2
-  summary: Implementation of both the exact and approximation methods for computing the cdf of
-    the Poisson binomial distribution. It also provides the pmf, quantile function,
-    and random number generation for the Poisson binomial distribution.
+  summary: Implementation of both the exact and approximation methods for computing the cdf of the Poisson binomial distribution. It also provides the pmf, quantile function, and random number generation for the Poisson binomial distribution.
   license_family: GPL2
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
